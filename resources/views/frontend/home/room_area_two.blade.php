@@ -8,7 +8,10 @@
             <div class="col-lg-6">
                 <div class="book-content-two">
                     <div class="section-title">
+                        @if ($bookarea)
+
                         <span class="sp-color">{{ $bookarea->short_title }}</span>
+
                         <h2>{{ $bookarea->main_title }}</h2>
                         <p>
                             {{ $bookarea->short_desc }}
@@ -25,4 +28,5 @@
             </div>
         </div>
     </div>
+    @endif
 </div>
